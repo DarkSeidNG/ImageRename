@@ -34,9 +34,9 @@ public class HttpRequestTest {
         assertThat(mainController).isNotNull();
     }
 
-    @Test
+    /*@Test
     public void greetingShouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/api/")).andDo(print()).andExpect(status().isOk())
                 .andExpect(content().string(containsString("hello alien!")));
-    }
+    }*/
 }

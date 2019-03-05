@@ -3,7 +3,7 @@ package image_rename.models;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-@Entity
+@Entity(name = "simplified_identifier")
 public class PinRecord {
     @Id
     private Integer id;

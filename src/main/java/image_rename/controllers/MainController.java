@@ -67,7 +67,7 @@ public class MainController {
             if (pinRecord != null){
                 int imageId = pinRecord.getUniq_id();
                 if (imageId != -1) {
-                    File renamedImage = new File(GlobalConstants.IMAGE_DIRECTORY + imageId + ".jpg");
+                    File renamedImage = new File(GlobalConstants.IMAGE_DIRECTORY + imageId + GlobalConstants.FILE_EXTENSION);
 
                     if (imageFile.renameTo(renamedImage)) {
                         System.out.println(GlobalConstants.SUCCESS_MESSAGE);

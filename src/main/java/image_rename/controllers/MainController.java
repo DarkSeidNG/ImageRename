@@ -21,6 +21,11 @@ public class MainController {
     @Autowired
     private PinRecordRepository pinRecordRepository;
 
+    @GetMapping(path="/")
+    public @ResponseBody String hello () {
+        return "hello alien!";
+    }
+
     /**
      * renameImage endpoint that is called to rename all images in a particular directory.
      *
@@ -82,5 +87,6 @@ public class MainController {
             //e.printStackTrace();
         }
     }
+
 
 }

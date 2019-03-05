@@ -17,6 +17,8 @@ Image Rename Utility helps rename image files in a specified folder, it scans th
 ## Getting started with the project 
 * Clone the repo `git clone https://github.com/DarkSeidNG/ImageRename.git`
 * Navigate to the `ImageRename` directory
+* Set up your db credentials in `application.properties` file
+* Set the key pair you want to use in renaming in the PinRecord Model
 * Run `./gradlew bootRun` to run the application
 * Run `./gradlew build` to build the .jar executable
 

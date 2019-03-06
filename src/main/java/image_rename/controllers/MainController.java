@@ -68,11 +68,11 @@ public class MainController {
     private void renameImage(File imageFile){
         try {
             String imagePin = imageFile.getName().replaceAll("[^0-9]+", "");
-            PinRecord pinRecord = pinRecordRepository.findByPin(Integer.parseInt(imagePin));
+            PinRecord pinRecord = pinRecordRepository.findByPin(imagePin);
             if (pinRecord != null){
-                int imageId = pinRecord.getUniq_id();
-                if (imageId != -1) {
-                    File renamedImage = new File(GlobalConstants.IMAGE_DIRECTORY + imageId + GlobalConstants.FILE_EXTENSION);
+                String imageId = pinRecord.getUniq_id();
+                if (imageId != null) {
+                    File renamedImage = new File(GlobalConstants.IMAGE_DIRECTORY + "/" + imageId + GlobalConstants.FILE_EXTENSION);
 
                     if (imageFile.renameTo(renamedImage)) {
                         System.out.println(GlobalConstants.SUCCESS_MESSAGE);

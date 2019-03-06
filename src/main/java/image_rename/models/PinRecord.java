@@ -11,9 +11,9 @@ public class PinRecord {
     @Id
     private Integer id;
 
-    private Integer uniq_id;
+    private String uniq_id;
 
-    private Integer pin;
+    private String pin;
 
     /**
      * Gets id.
@@ -38,7 +38,7 @@ public class PinRecord {
      *
      * @return the uniq id
      */
-    public Integer getUniq_id() {
+    public String getUniq_id() {
         return uniq_id;
     }
 
@@ -47,7 +47,7 @@ public class PinRecord {
      *
      * @param uniq_id the uniq id
      */
-    public void setUniq_id(Integer uniq_id) {
+    public void setUniq_id(String uniq_id) {
         this.uniq_id = uniq_id;
     }
 
@@ -56,7 +56,7 @@ public class PinRecord {
      *
      * @return the pin
      */
-    public Integer getPin() {
+    public String getPin() {
         return pin;
     }
 
@@ -65,7 +65,7 @@ public class PinRecord {
      *
      * @param pin the pin
      */
-    public void setPin(Integer pin) {
+    public void setPin(String pin) {
         this.pin = pin;
     }
 }

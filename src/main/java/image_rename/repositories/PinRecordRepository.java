@@ -13,5 +13,5 @@ public interface PinRecordRepository extends CrudRepository<PinRecord, Integer> 
      * @param pin the pin
      * @return the pin record
      */
-    PinRecord findByPin(int pin);
+    PinRecord findByPin(String pin);
 }
